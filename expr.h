@@ -4,7 +4,6 @@
 #include <pet.h>
 
 #include "context.h"
-#include "expr_access_type.h"
 #include "summary.h"
 
 #if defined(__cplusplus)

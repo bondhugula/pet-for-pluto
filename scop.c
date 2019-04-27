@@ -48,7 +48,6 @@
 
 #include "aff.h"
 #include "expr.h"
-#include "expr_access_type.h"
 #include "filter.h"
 #include "loc.h"
 #include "nest.h"

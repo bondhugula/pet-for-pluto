@@ -61,7 +61,6 @@ libpet_la_SOURCES = \
 	context.c \
 	expr.h \
 	expr.c \
-	expr_access_type.h \
 	expr_arg.h \
 	expr_arg.c \
 	expr_plus.h \

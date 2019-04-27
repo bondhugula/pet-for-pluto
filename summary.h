@@ -3,8 +3,6 @@
 
 #include <isl/map.h>
 
-#include "expr_access_type.h"
-
 #if defined(__cplusplus)
 extern "C" {
 #endif
