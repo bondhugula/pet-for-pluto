@@ -615,6 +615,9 @@ __isl_give isl_union_map *pet_scop_compute_outer_to_inner(
 __isl_give isl_union_map *pet_scop_compute_outer_to_any(
 	__isl_keep pet_scop *scop);
 
+__isl_give isl_union_map *pet_stmt_collect_accesses(struct pet_stmt *stmt,
+	enum pet_expr_access_type type, int tag, __isl_take isl_space *dim);
+
 #if defined(__cplusplus)
 }
 #endif

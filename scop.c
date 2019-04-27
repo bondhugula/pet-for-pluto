@@ -2490,7 +2490,7 @@ static int expr_collect_accesses(__isl_keep pet_expr *expr, void *user)
  * We therefore ignore such statements when we are looking for
  * definite accesses.
  */
-static __isl_give isl_union_map *stmt_collect_accesses(struct pet_stmt *stmt,
+__isl_give isl_union_map *pet_stmt_collect_accesses(struct pet_stmt *stmt,
 	enum pet_expr_access_type type, int tag, __isl_take isl_space *dim)
 {
 	struct pet_expr_collect_accesses_data data = { type, tag };
@@ -2709,7 +2709,7 @@ static __isl_give isl_union_map *scop_collect_accesses(struct pet_scop *scop,
 			continue;
 
 		space = isl_set_get_space(scop->context);
-		accesses_i = stmt_collect_accesses(stmt, type, tag, space);
+		accesses_i = pet_stmt_collect_accesses(stmt, type, tag, space);
 		accesses = isl_union_map_union(accesses, accesses_i);
 	}
 
