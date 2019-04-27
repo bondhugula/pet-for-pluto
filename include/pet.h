@@ -388,6 +388,9 @@ struct pet_stmt {
 	isl_set *domain;
 	pet_tree *body;
 
+    /* TEMP HACK to extract pet stmt's string in pluto */
+	char *text;
+
 	unsigned n_arg;
 	pet_expr **args;
 };
